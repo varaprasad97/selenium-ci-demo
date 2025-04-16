@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Multiply</title></head>
+<body>
+    <h1>Multiply Numbers</h1>
+    <input id="num1" type="number">
+    <input id="num2" type="number">
+    <button onclick="multiply()">Multiply</button>
+    <p id="result">Result: </p>
+
+    <script>
+        function multiply() {
+            let a = +document.getElementById("num1").value;
+            let b = +document.getElementById("num2").value;
+            document.getElementById("result").textContent = "Result: " + (a * b);
+        }
+    </script>
+</body>
+</html>
